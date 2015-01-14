@@ -1,0 +1,85 @@
+#!/bin/bash
+
+function prompt()
+{
+  DIR=$(basename "$PWD")
+
+  case "$DIR" in
+    $USER)
+      simbolo='⌂ '
+      ;;
+    download|down|Descargas)
+      simbolo='↓ '
+      ;;
+    direplos)
+      simbolo='đ'
+      ;;
+    org)
+      simbolo='○ '
+      ;;
+    html)
+      simbolo='Н '
+      ;;
+    blog)
+      simbolo='Ь '
+      ;;
+    suitekoner)
+      simbolo='к '
+      ;;
+    sugargca)
+      simbolo='δ '
+      ;;
+    sugargca65)
+      simbolo='ğ '
+      ;;
+    9cabce0)
+      simbolo='۹ '
+      ;;
+    symfonyauditoria|auditoria)
+      simbolo='α '
+      ;;
+    symfonyexternos|externos)
+      simbolo='ε '
+      ;;
+    letras-viajeras|lviajeras|letras_viajeras)
+      simbolo='Ḻ '
+      ;;
+    org-bash-utils)
+      simbolo='Ц '
+      ;;
+    pcap2dot)
+      simbolo='ρ '
+      ;;
+    bin)
+      simbolo='β '
+      ;;
+    plan-b)
+      simbolo='в '
+      ;;
+    etc)
+      simbolo='Є '
+      ;;
+    musica|mp3|Música)
+      simbolo='♪ '
+      ;;
+    log|logs)
+      simbolo='♣ '
+      ;;
+    "/")
+      simbolo='╱ '
+      ;;
+    *)
+      simbolo='▶ '
+  esac
+
+  echo $DIR | egrep "cct-[0-9]+" >/dev/null
+  OK=$(echo $?)
+  if [ $OK -eq 0 ]
+  then
+    simbolo='с '
+  fi
+
+  echo $simbolo
+}
+
+export PS1='\n\[\033[1;32m\]`prompt` '

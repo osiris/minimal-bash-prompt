@@ -1,0 +1,54 @@
+#+TITLE:     Minimal Bash Prompt
+#+AUTHOR:    Osiris Alejandro Gómez
+#+EMAIL:     osiux@osiux.com
+#+LANGUAGE:  es
+#+LINK_HOME: index.html
+#+LINK:      ISSUE https://github.com/osiris/minimal-bash-prompt/issues/
+
+
+
+** overview
+
+   Prompt function for show one UTF-8 symbol for minimal prompt.
+
+** install
+
+   Clone the repository:
+
+   #+BEGIN_SRC sh :session :results none :exports code
+     cd ~
+     git clone https://github.com/osiris/minimal-bash-prompt
+   #+END_SRC
+
+   Add to =~/.bashrc=:
+
+   #+BEGIN_SRC sh :session :results none :exports code
+     if [ -d "$HOME/mininal-bash-prompt" ]
+     then
+         source $HOME/mininal-bash-prompt/minimal-bash-prompt
+     fi
+   #+END_SRC
+
+** example
+
+   #+BEGIN_EXAMPLE 
+     ▶ cd
+
+     ⌂ cd ~/down
+
+     ↓ cd /etc
+
+     Є cd /var/log/
+
+     ♣ cd ~/bin
+
+     β cd ~/blog
+
+     Ь cd ~/html
+
+     Н cd ~/musica
+
+     ♪ cd /
+
+     ╱    
+   #+END_EXAMPLE
