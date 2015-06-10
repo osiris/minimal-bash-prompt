@@ -14,6 +14,9 @@ function prompt()
     direplos)
       simbolo='đ'
       ;;
+    multi-ssh-config)
+      simbolo='ѕ '
+      ;;
     org)
       simbolo='○ '
       ;;
@@ -23,7 +26,10 @@ function prompt()
     blog)
       simbolo='Ь '
       ;;
-    suitekoner)
+    rcc)
+      simbolo='г '
+      ;;
+    bak)
       simbolo='к '
       ;;
     sugargca)
