@@ -8,6 +8,9 @@ function prompt()
     $USER)
       simbolo='⌂ '
       ;;
+    automatizacion-nube)
+      simbolo='Α'
+      ;;
     download|down|Descargas)
       simbolo='↓ '
       ;;
@@ -50,6 +53,9 @@ function prompt()
     letras-viajeras|lviajeras|letras_viajeras)
       simbolo='Ḻ '
       ;;
+    nube|nube.coop)
+      simbolo='и '
+      ;;
     org-bash-utils)
       simbolo='Ц '
       ;;
@@ -58,6 +64,9 @@ function prompt()
       ;;
     bin)
       simbolo='β '
+      ;;
+    ispconfig)
+      simbolo='Ι'
       ;;
     plan-b)
       simbolo='в '
